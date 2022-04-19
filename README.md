@@ -115,23 +115,26 @@ Training process
 
 Evaluation
 
-	In the method followed, first we need to know how much we can rely on this method for the computation of the VaR
-	and CVaR statistics, as the model been used is composed of modules that exhibit uncertainty and variable accuracy 
-	depended on the amount of historical data used and the number of trials and how these trials have been carried out.
-	The confidence intervals for VaR and CVaR can provide us such an information and a nice way for estimating confidence 
-	intervals is through bootstrapping [3]. Bootstrapping involves carrying out a number of times (e.g. 100 ) the computation
-	of the statistics and then forming the confidence intervals for a specific probability from the corresponding quantiles 
-	of the historical data. The confidence intervals thus give an estimate of how much consistent is the model in its output
-	or how much confident the model is in its estimation of the statistic and in this case arise as very tiny, which is a 
-	good indication for the quality of the model.	
+	In the method followed, first we need to know how much we can rely on this method for the computation of 
+	the VaR and CVaR statistics, as the model been used is composed of modules that exhibit uncertainty and
+	variable accuracy depended on the amount of historical data used and the number of trials and how these 
+	trials have been carried out.
+	The confidence intervals for VaR and CVaR can provide us such an information and a nice way for estimating
+	confidence intervals is through bootstrapping [3]. Bootstrapping involves carrying out a number of times 
+	(e.g. 100 ) the computation of the statistics and then forming the confidence intervals for a specific 
+	probability from the corresponding quantiles of the historical data. The confidence intervals thus give
+	an estimate of how much consistent is the model in its output or how much confident the model is in its
+	estimation of the statistic and in this case arise as very tiny, which is a good indication for the quality
+	of the model.	
 
-	Secondly, we need to evaluate the statistics themeselves against the real world, how well they represent reality and 
-	give the right signal about risk. Several tests have been proposed in the literature [4] for the evaluation of the VaR 
-	statistic, which all of them have both strong and weak points. For this, it is a good practice to carry out a set of 
-	them for the purpose of evaluating how good each statistic is against reality. In this study, Kupie's Portion-of-Failures 
-	test [4, 5] and the binomial test have been carried out [4], which reveal that the value of the statistic computed doesn't 
-	represent sufficiently reality, which means that some improvements in the model may be needed, such as training the 
-	instrument models with more data or picking a better type of model for instrument returns' simulation.
+	Secondly, we need to evaluate the statistics themeselves against the real world, how well they represent 
+	reality and give the right signal about risk. Several tests have been proposed in the literature [4] for 
+	the evaluation of the VaR statistic, which all of them have both strong and weak points. For this, it is
+	a good practice to carry out a set of them for the purpose of evaluating how good each statistic is against
+	reality. In this study, Kupie's Portion-of-Failures test [4, 5] and the binomial test have been carried out 
+	[4], which reveal that the value of the statistic computed doesn't represent sufficiently reality, which 
+	means that some improvements in the model may be needed, such as training the instrument models with more 
+	data or picking a better type of model for instrument returns' simulation.
 	
 
  
@@ -140,12 +143,13 @@ Code
    risk_management.py
    
    
-   The time window of 2 weeks for calculating the returns of investment that has been used in the implemenation is somewhat
-   loose. In a later version of the code 10 business days will be considered for the computation of the historical returns 
-   for achieving better quality of the historical data used in the modeling process.
+   The time window of 2 weeks for calculating the returns of investment that has been used in the implemenation is
+   somewhat loose. In a later version of the code 10 business days will be considered for the computation of the 
+   historical returns for achieving better quality of the historical data used in the modeling process.   
    All can be run interactively with pyspark shell or by submitting  
-       e.g. exec(open("project/location/risk_assessment/risk_management.py").read()) for an all at once execution. The code  
-   has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle has been used.    
+       e.g. exec(open("project/location/risk_assessment/risk_management.py").read()) for an all at once execution.
+   The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle
+   has been used.        
    The external python packages that are used in this implementation exist in the requirements.txt file. Install with:   
 	   pip install -r project/location/risk_assessment/requirements.txt
      
