@@ -37,12 +37,12 @@ Techniques followed
 	model). Each instrument model is then trained using historical data of the instrument returns. The VaR will 
 	and the CVaR are computed on the p percentage of the worst trials' returns. 
 	
-    	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on the 
+	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on the 
 	techniques proposed for modeling market factors and for estimating investment return based on these market 
 	factors. The method applied here captures well a mainstream of the ways followed for estimating the VaR and 
 	CVaR statistics and managing finacial risk.
 	
-    	In another mindset, there are other methods for the calculation of VaR and other financial statistics, which
+	In another mindset, there are other methods for the calculation of VaR and other financial statistics, which
 	are based on Deep Learning Networks (such as LSTMs and others).
 
 
