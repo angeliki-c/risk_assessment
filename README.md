@@ -27,15 +27,15 @@ Techniques followed
 	return is determined by the market conditions, in which the probability ditribution of each instrument's 
 	return over the market conditions, as well as the dynamics of the market conditions are not known, in fact, 
 	a priori. The market conditions, for fascilitating quantitative analysis, are often expressed in certain 
-	market factors, such as the S&P 500 Index 's perfomance, the Nasdaq 's returns, the changes in USD/EURO exchange
-	and others. The dynamics of these factors over time, for starting to build a solid ground on which we could 
-	estimate instruments' returns, in repsect with the changing market conditions, could be modeled using generative 
-	modeling. There is a range of techniques that may be used at this point. We applied a model following a
-	multivariate distribution of the factors' fluctuations over time. For modeling each instrument's return with 
-	respect to factors' behavior, a linear (or a nonlinear) model may be used on market factors' fluctuations (or
-	on a transformation of the market factors' fluctuations if using a linear, instead of a non-linear instrument 
-	model). Each instrument model is then trained using historical data of the instrument returns. The VaR will 
-	and the CVaR are computed on the p percentage of the worst trials' returns. 
+	market factors, such as the S&P 500 Index 's perfomance, the Nasdaq 's returns, the changes in USD/EURO 
+	exchange and others. The dynamics of these factors over time, for starting to build a solid ground on which
+	we could estimate instruments' returns, in repsect with the changing market conditions, could be modeled 
+	using generative modeling. There is a range of techniques that may be used at this point. We applied a model
+	following a multivariate distribution of the factors' fluctuations over time. For modeling each instrument's 
+	return with respect to factors' behavior, a linear (or a nonlinear) model may be used on market factors' 
+	fluctuations (or on a transformation of the market factors' fluctuations if using a linear, instead of a non-
+	linear instrument model). Each instrument model is then trained using historical data of the instrument returns.
+	The VaR will and the CVaR are computed on the p percentage of the worst trials' returns. 
 	
 	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on the 
 	techniques proposed for modeling market factors and for estimating investment return based on these market 
