@@ -99,16 +99,17 @@ Challenges
 
 Training process
     
-	The instrument returns are modelled using linear models, trained each by minimizing empirical loss with Stochastic 
-	Gradient Descent for 1000 iterations. There is definitely much room for improving the models. The data used for
-	training each instrument model was around 200 for the time period of year 2013, which is considered very few. When 
-	increasing the range of the time period, the linear model 's performance is again poor and affects the overall 
-	portfolio's return that is estimated from the trials.
+	The instrument returns are modelled using linear models, trained each by minimizing empirical loss with
+	Stochastic Gradient Descent for 1000 iterations. There is definitely much room for improving the models. 
+	The data used for training each instrument model was around 200 for the time period of year 2013, which
+	is considered very few. When increasing the range of the time period, the linear model 's performance 
+	is again poor and affects the overall portfolio's return that is estimated from the trials.
 
-	An as much close to reality simulation of the instrument returns based on market conditions is attempted through 
-	carrying out 10000 trials of instrument returns' estimation with 100 degree of parallelism. In each partition where
-	trials are executed a different seed has been used for the random number generators, to achieve as much as possible 
-	randomness in trials execution and approach a good empirical distribution estimation. 
+	An as much close to reality simulation of the instrument returns based on market conditions is attempted
+	through carrying out 10000 trials of instrument returns' estimation with 100 degree of parallelism. In 
+	each partition where trials are executed a different seed has been used for the random number generators, 
+	to achieve as much as possible randomness in trials execution and approach a good empirical distribution
+	estimation. 
 
     	
 
