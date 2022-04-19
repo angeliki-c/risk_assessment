@@ -39,8 +39,8 @@ Techniques followed
 	
 	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on 
 	the techniques proposed for modeling market factors and for estimating investment return based on these 
-	market factors. The method applied here captures well a mainstream of the ways followed for estimating the VaR
-	and CVaR statistics and managing finacial risk.
+	market factors. The method applied here captures well a mainstream of the ways followed for estimating the 
+	VaR and CVaR statistics and managing finacial risk.
 	
 	In another mindset, there are other methods for the calculation of VaR and other financial statistics, which
 	are based on Deep Learning Networks (such as LSTMs and others).
@@ -51,21 +51,22 @@ Data set
    
     All the financial data used in this case study is retrieved from Finance Yahoo [1].
 	
-    -> historical data for the year 2013 for our portfolio of instruments, composed of all the stocks included in 
-	   the NASDAQ index. It is composed of 2972 stocks and it includes around 600000 records, though the original 
-	   dataset downloaded consists of around 5856396 records, as it includes data from year 2000 up until 2013.
-	   Typically, for commercial applications far more data is used than this udes in this use case. The dataset 
-	   may be found in the folder 'data/stocks'.
-    -> historical data for year 2013 about the market factors considered. It consists of about 1200 records for all
- 	   the factors, in total. This dataset may be found in the folder 'data/factors'.
+    -> historical data for the year 2013 for our portfolio of instruments, composed of all the stocks included
+    in the NASDAQ index. It is composed of 2972 stocks and it includes around 600000 records, though the original 
+    dataset downloaded consists of around 5856396 records, as it includes data from year 2000 up until 2013.
+    Typically, for commercial applications far more data is used than this udes in this use case. The dataset 
+    may be found in the folder 'data/stocks'.
+    
+    -> historical data for year 2013 about the market factors considered. It consists of about 1200 records for
+    all the factors, in total. This dataset may be found in the folder 'data/factors'.
        4 factors considered in the analysis
 	     ^GSPC     S&P500
 		 ^IXIC     NASDAQ
 		 ^TYX      prices of 30-year US Treasury bonds
 		 ^FVX      prices of 5-year US Treasury bonds
 	
-	For downloading the historical data for the stocks you may use script [2], calling it from the working 
-	directory. Ensure that the 'symbols.txt' file, with the symbols of the stocks, is in the working directory. 
+    For downloading the historical data for the stocks you may use script [2], calling it from the working 
+    directory. Ensure that the 'symbols.txt' file, with the symbols of the stocks, is in the working directory. 
 	
 	
 
