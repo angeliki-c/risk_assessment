@@ -34,11 +34,11 @@ Techniques followed
 	following a multivariate distribution of the factors' fluctuations over time. For modeling each instrument's 
 	return with respect to factors' behavior, a linear (or a nonlinear) model may be used on market factors' 
 	fluctuations (or on a transformation of the market factors' fluctuations if using a linear, instead of a non-
-	linear instrument model). Each instrument model is then trained using historical data of the instrument returns.
-	The VaR will and the CVaR are computed on the p percentage of the worst trials' returns. 
+	linear instrument model). Each instrument model is then trained using historical data of the instrument 
+	returns. The VaR will and the CVaR are computed on the p percentage of the worst trials' returns. 
 	
-	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on the 
-	techniques proposed for modeling market factors and for estimating investment return based on these market 
+	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on 
+	the techniques proposed for modeling market factors and for estimating investment return based on these market 
 	factors. The method applied here captures well a mainstream of the ways followed for estimating the VaR and 
 	CVaR statistics and managing finacial risk.
 	
