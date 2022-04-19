@@ -20,9 +20,9 @@ Techniques followed
     
 	The technique that is followed in this use case is based on Monte Carlo and follows the steps described in
 	[3], deviating slightly at few points. Briefly described, it involves the execution of thousands simulations
-	in parallel at multiple cores, for the aim of being able in that way to model market's behavior and therefore,
-	to get a reliable estimation of the instruments' returns, on which the VaR and cVaR statistics will be 
-	estimated. 
+	in parallel at multiple cores, for the aim of being able in that way to model market's behavior and 
+	therefore, to get a reliable estimation of the instruments' returns, on which the VaR and cVaR statistics 
+	will be estimated. 
 	In these simulations, we assume that each trial runs a seperate market scenario, where each instrument's 
 	return is determined by the market conditions, in which the probability ditribution of each instrument's 
 	return over the market conditions, as well as the dynamics of the market conditions are not known, in fact, 
@@ -38,9 +38,9 @@ Techniques followed
 	returns. The VaR will and the CVaR are computed on the p percentage of the worst trials' returns. 
 	
 	There are alternative simulation techniques for estimating Var and CVaR statistics, which differantiate on 
-	the techniques proposed for modeling market factors and for estimating investment return based on these market 
-	factors. The method applied here captures well a mainstream of the ways followed for estimating the VaR and 
-	CVaR statistics and managing finacial risk.
+	the techniques proposed for modeling market factors and for estimating investment return based on these 
+	market factors. The method applied here captures well a mainstream of the ways followed for estimating the VaR
+	and CVaR statistics and managing finacial risk.
 	
 	In another mindset, there are other methods for the calculation of VaR and other financial statistics, which
 	are based on Deep Learning Networks (such as LSTMs and others).
