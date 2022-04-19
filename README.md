@@ -75,25 +75,25 @@ Baseline
 	The followed method of estimating VaR and CVaR statistics is aimed to be evaluated against other techniques
 	in the future. Some indicative methods to use as benchmarks is the Variance-Covariance method, which assumes 
 	that the investment return of each instrument follows normal distribution and can be modelled using the mean 
-	and standard deviation from the historical data and the Modeling from Historical Data approach, which estimates
-	VaR and CVaR from the historical data directly, considering the instruments' worst performance over a specific 
-	time period.
+	and standard deviation from the historical data and the Modeling from Historical Data approach, which 
+	estimates VaR and CVaR from the historical data directly, considering the instruments' worst performance over
+	a specific time period.
 
 	
 	
 Challenges
 	
-	Monte Carlo's performance is largely dependent on the reliability of the models chosen for the simulation of the
-	market factors' behavior and of those modeling each instrument's return.
+	Monte Carlo's performance is largely dependent on the reliability of the models chosen for the simulation of
+	the market factors' behavior and of those modeling each instrument's return.
 	
 	In modeling instruments' behavior we have to face the training of a big number of linear models (around 3000) 
 	with few features and relatively small amount of data points (historical data).
 	
-	Another challenge at a technical level encountered is the management of null values. Sometimes, in data preprocessing, 
-	it can be tricky, when using different frameworks, as for example, pandas represents 'None' using 'pd.na', though
-	this is not captured as 'null' value in pyspark, when using the column method 'isNull', which may lead to inconsistencies 
-	and leakage of errors, if not taking appropriate actions in 'null' values's management, probably with a more significant 
-	impact in series data processing.
+	Another challenge at a technical level encountered is the management of null values. Sometimes, in data 
+	preprocessing, it can be tricky, when using different frameworks, as for example, pandas represents 'None' 
+	using 'pd.na', though this is not captured as 'null' value in pyspark, when using the column method 'isNull', 
+	which may lead to inconsistencies and leakage of errors, if not taking appropriate actions in 'null' values's 
+	management, probably with a more significant impact in series data processing.
 
      
 
